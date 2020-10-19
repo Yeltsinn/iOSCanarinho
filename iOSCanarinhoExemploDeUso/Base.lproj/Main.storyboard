@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSCanarinhoExemploDeUso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9Sq-89-TVV">
+                                <rect key="frame" x="52" y="251.5" width="310.5" height="403"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCk-ui-LiK">
+                                        <rect key="frame" x="134" y="0.0" width="42" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOL-bW-Nse">
+                                        <rect key="frame" x="134" y="58" width="42" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pGY-e0-6Fc">
+                                        <rect key="frame" x="0.0" y="116" width="310.5" height="54.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPV-YI-bTV">
+                                        <rect key="frame" x="0.0" y="174.5" width="310.5" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gFC-7p-0zU">
+                                        <rect key="frame" x="0.0" y="232.5" width="310.5" height="54.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-3P-xBb" userLabel="MostrarInputsSemMascara">
+                                        <rect key="frame" x="0.0" y="291" width="310.5" height="54"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.24769724151234568" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="MOSTRAR INPUTS SEM MASCARA"/>
+                                        <connections>
+                                            <action selector="mostrarInputsSemMascara:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pdq-Cr-lhK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfe-Jv-AFr" userLabel="MostrarInputsComMascara">
+                                        <rect key="frame" x="0.0" y="349" width="310.5" height="54"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="MOSTRAR INPUTS SEM MASCARA"/>
+                                        <connections>
+                                            <action selector="mostrarInputsComMascara:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JMI-Xr-A06"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rfe-Jv-AFr" firstAttribute="width" secondItem="a2k-3P-xBb" secondAttribute="width" id="7pC-ys-R7X"/>
+                                    <constraint firstItem="kPV-YI-bTV" firstAttribute="width" secondItem="9Sq-89-TVV" secondAttribute="width" id="C2J-2E-14U"/>
+                                    <constraint firstItem="a2k-3P-xBb" firstAttribute="width" secondItem="9Sq-89-TVV" secondAttribute="width" id="GeR-oQ-5kc"/>
+                                    <constraint firstItem="gFC-7p-0zU" firstAttribute="width" secondItem="9Sq-89-TVV" secondAttribute="width" id="b5p-iu-ZMV"/>
+                                    <constraint firstItem="pGY-e0-6Fc" firstAttribute="width" secondItem="9Sq-89-TVV" secondAttribute="width" id="qsk-ae-bXh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9Sq-89-TVV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="2w4-XL-zc4"/>
+                            <constraint firstItem="9Sq-89-TVV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="KeX-jf-37O"/>
+                            <constraint firstItem="9Sq-89-TVV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bPu-7P-gkk"/>
+                            <constraint firstItem="9Sq-89-TVV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dV7-Et-hpQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldBoleto" destination="gFC-7p-0zU" id="LHK-jg-bZ4"/>
+                        <outlet property="textFieldCPF" destination="pGY-e0-6Fc" id="Kur-XV-cr4"/>
+                        <outlet property="textFieldTelefone" destination="kPV-YI-bTV" id="Gso-AN-AKQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="100"/>
+        </scene>
+    </scenes>
+</document>
