@@ -13,6 +13,8 @@ public enum CNMascara: String {
     case mascaraCNPJ = "##.###.###/####-##"
     case mascaraCEP  = "#####-###"
     case mascaraRG   = "#.###.###"
+    case mascaraLinhaDigitavelConvenio = "###########-# ###########-# ###########-# ###########-#"
+    case mascaraLinhaDigitavelBoleto =  "#####.##### #####.###### #####.###### # ##############"
 }
 
 class CNGeradorMascaraGenerico: GeradorMascaraNumerico {

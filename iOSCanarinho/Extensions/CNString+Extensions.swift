@@ -40,6 +40,10 @@ extension String {
         return String(string[range])
     }
     
+    public func aplicaMascara(_ mascara: CNMascara) -> String {
+        return aplicaMascara(mascara: mascara.rawValue)
+    }
+    
     public func aplicaMascara(mascara: String) -> String {
         
         var stringResultante = String()

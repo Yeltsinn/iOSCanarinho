@@ -19,9 +19,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldTelefone: UITextField!
     @IBOutlet weak var textFieldBoleto: UITextField!
 
+    @IBOutlet weak var labelCPF: UILabel!
+    @IBOutlet weak var labelRG: UILabel!
+    @IBOutlet weak var labelLinhaDigitavelBoleto: UILabel!
+    @IBOutlet weak var labelBoletoConvenio: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configuraFormatadoresParaTextField()
+        aplicaMascaraNasLabels()
+    }
+    
+    func aplicaMascaraNasLabels() {
+        labelRG.text = "1111111".aplicaMascara(.mascaraRG)
+        labelCPF.text = "11111111111".aplicaMascara(.mascaraCPF)
+        labelBoletoConvenio.text = "4123412341241241234123412341".aplicaMascara(.mascaraLinhaDigitavelConvenio)
+        labelLinhaDigitavelBoleto.text = "888888888888888888888888888888888888888888888888".aplicaMascara(.mascaraLinhaDigitavelBoleto)
     }
     
     func configuraFormatadoresParaTextField() {

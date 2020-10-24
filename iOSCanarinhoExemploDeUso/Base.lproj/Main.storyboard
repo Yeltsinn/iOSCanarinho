@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,46 +18,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9Sq-89-TVV">
-                                <rect key="frame" x="52" y="251.5" width="310.5" height="403"/>
+                                <rect key="frame" x="52" y="162" width="310.5" height="582"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCk-ui-LiK">
-                                        <rect key="frame" x="134" y="0.0" width="42" height="54"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="138.5" y="0.0" width="33" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOL-bW-Nse">
-                                        <rect key="frame" x="134" y="58" width="42" height="54"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="138.5" y="65" width="33" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lap-2F-fKh">
+                                        <rect key="frame" x="138.5" y="130" width="33" height="61.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdz-NZ-nqK">
+                                        <rect key="frame" x="138.5" y="195.5" width="33" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pGY-e0-6Fc">
-                                        <rect key="frame" x="0.0" y="116" width="310.5" height="54.5"/>
+                                        <rect key="frame" x="0.0" y="260.5" width="310.5" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPV-YI-bTV">
-                                        <rect key="frame" x="0.0" y="174.5" width="310.5" height="54"/>
+                                        <rect key="frame" x="0.0" y="325.5" width="310.5" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gFC-7p-0zU">
-                                        <rect key="frame" x="0.0" y="232.5" width="310.5" height="54.5"/>
+                                        <rect key="frame" x="0.0" y="390.5" width="310.5" height="61.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-3P-xBb" userLabel="MostrarInputsSemMascara">
-                                        <rect key="frame" x="0.0" y="291" width="310.5" height="54"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-3P-xBb" userLabel="MostrarInputsSemMascara">
+                                        <rect key="frame" x="0.0" y="456" width="310.5" height="61"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.24769724151234568" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="MOSTRAR INPUTS SEM MASCARA"/>
                                         <connections>
                                             <action selector="mostrarInputsSemMascara:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pdq-Cr-lhK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfe-Jv-AFr" userLabel="MostrarInputsComMascara">
-                                        <rect key="frame" x="0.0" y="349" width="310.5" height="54"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfe-Jv-AFr" userLabel="MostrarInputsComMascara">
+                                        <rect key="frame" x="0.0" y="521" width="310.5" height="61"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="MOSTRAR INPUTS SEM MASCARA"/>
                                         <connections>
                                             <action selector="mostrarInputsComMascara:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JMI-Xr-A06"/>
@@ -71,16 +87,20 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9Sq-89-TVV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="2w4-XL-zc4"/>
-                            <constraint firstItem="9Sq-89-TVV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="KeX-jf-37O"/>
+                            <constraint firstItem="9Sq-89-TVV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.65" id="KeX-jf-37O"/>
                             <constraint firstItem="9Sq-89-TVV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bPu-7P-gkk"/>
                             <constraint firstItem="9Sq-89-TVV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dV7-Et-hpQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="labelBoletoConvenio" destination="Vdz-NZ-nqK" id="0lN-Lh-GWR"/>
+                        <outlet property="labelCPF" destination="VCk-ui-LiK" id="UGt-yu-9o6"/>
+                        <outlet property="labelLinhaDigitavelBoleto" destination="Lap-2F-fKh" id="Ai0-uj-vaJ"/>
+                        <outlet property="labelRG" destination="rOL-bW-Nse" id="Zz8-pQ-Vqv"/>
                         <outlet property="textFieldBoleto" destination="gFC-7p-0zU" id="LHK-jg-bZ4"/>
                         <outlet property="textFieldCPF" destination="pGY-e0-6Fc" id="Kur-XV-cr4"/>
                         <outlet property="textFieldTelefone" destination="kPV-YI-bTV" id="Gso-AN-AKQ"/>
@@ -91,4 +111,9 @@
             <point key="canvasLocation" x="139" y="100"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
