@@ -18,6 +18,7 @@ Além de dar suporte para o trabalho com máscaras, formatadores e validadores p
 * Boleto Cobrança 
 * Telefone
 * Telefone com máscara de segurança
+* CEP
 
 ## Validadores
 
