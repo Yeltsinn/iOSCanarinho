@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70D4B7FB254DD274000D92F7 /* CNCollection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4B7FA254DD274000D92F7 /* CNCollection+Extensions.swift */; };
 		70EE447A251A2E7D00B4588A /* iOSCanarinho.h in Headers */ = {isa = PBXBuildFile; fileRef = 70EE4478251A2E7D00B4588A /* iOSCanarinho.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70EE448E251A2E9C00B4588A /* CNGeradorMascaraGenerico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE4481251A2E9C00B4588A /* CNGeradorMascaraGenerico.swift */; };
 		70EE448F251A2E9C00B4588A /* CNFormatadorMoeda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE4482251A2E9C00B4588A /* CNFormatadorMoeda.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70D4B7FA254DD274000D92F7 /* CNCollection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CNCollection+Extensions.swift"; sourceTree = "<group>"; };
 		70EE4475251A2E7D00B4588A /* iOSCanarinho.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSCanarinho.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EE4478251A2E7D00B4588A /* iOSCanarinho.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSCanarinho.h; sourceTree = "<group>"; };
 		70EE4479251A2E7D00B4588A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				70EE448D251A2E9C00B4588A /* CNNSRegularExpression+Extension.swift */,
 				70EE4487251A2E9C00B4588A /* CNString+Extensions.swift */,
 				70EE4488251A2E9C00B4588A /* CNDouble+Extensions.swift */,
+				70D4B7FA254DD274000D92F7 /* CNCollection+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70EE448F251A2E9C00B4588A /* CNFormatadorMoeda.swift in Sources */,
+				70D4B7FB254DD274000D92F7 /* CNCollection+Extensions.swift in Sources */,
 				70EE4498251A2E9C00B4588A /* CNGeradorMascaraTelefone.swift in Sources */,
 				70EE4490251A2E9C00B4588A /* CNCodigoDeBarrasUtil.swift in Sources */,
 				70EE4497251A2E9C00B4588A /* CNPessoaFisicaJuridicaUtil.swift in Sources */,

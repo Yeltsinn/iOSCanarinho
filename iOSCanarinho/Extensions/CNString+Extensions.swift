@@ -40,8 +40,23 @@ extension String {
         return String(string[range])
     }
     
-    public func aplicaMascara(_ mascara: CNMascara) -> String {
-        return aplicaMascara(mascara: mascara.rawValue)
+    public func aplicaMascara(_ mascara: CNMascara, esconderPosicoes posicoesParaEsconder: [Int] = [], caractereDeOcultacao: Character = "*") -> String {
+        
+        var textoSemMascara = self
+        if !posicoesParaEsconder.isEmpty {
+            posicoesParaEsconder.forEach { posicao in
+                textoSemMascara = String.subistiuiCaractere(texto: textoSemMascara, posicao, caractereDeOcultacao)
+            }
+        }
+        let textoComMascara = textoSemMascara.aplicaMascara(mascara: mascara.rawValue)
+        return textoComMascara
+    }
+    
+    static func subistiuiCaractere(texto: String, _ posicao: Int, _ novoCaractere: Character) -> String {
+        var caracteres = Array(texto)
+        guard let _ = caracteres[safe: posicao] else { return String(caracteres) }
+        caracteres[posicao] = novoCaractere
+        return String(caracteres)
     }
     
     public func aplicaMascara(mascara: String) -> String {

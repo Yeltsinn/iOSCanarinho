@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     func aplicaMascaraNasLabels() {
         labelRG.text = "1111111".aplicaMascara(.mascaraRG)
-        labelCPF.text = "11111111111".aplicaMascara(.mascaraCPF)
+        labelCPF.text = "11111111111".aplicaMascara(.mascaraCPF, esconderPosicoes: [0, 1, 2, 9, 10], caractereDeOcultacao: "*")
         labelBoletoConvenio.text = "4123412341241241234123412341".aplicaMascara(.mascaraLinhaDigitavelConvenio)
         labelLinhaDigitavelBoleto.text = "888888888888888888888888888888888888888888888888".aplicaMascara(.mascaraLinhaDigitavelBoleto)
     }
