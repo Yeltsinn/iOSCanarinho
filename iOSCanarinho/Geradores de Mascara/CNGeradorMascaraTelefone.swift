@@ -29,7 +29,7 @@ class CNGeradorMascaraTelefone: GeradorMascaraNumerico {
         return capturaMascaraTelefoneBaseadoQuantidadeNumeros(textoSemMascara.filtrarNumeros().count)
     }
     
-    private func capturaMascaraTelefoneBaseadoQuantidadeNumeros(_ count: Int) -> String {
+    func capturaMascaraTelefoneBaseadoQuantidadeNumeros(_ count: Int) -> String {
         switch count {
         case 0..<8 : return mascaraTelefone1
         case 8     : return mascaraTelefone2

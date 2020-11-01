@@ -45,14 +45,14 @@ extension String {
         var textoSemMascara = self
         if !posicoesParaEsconder.isEmpty {
             posicoesParaEsconder.forEach { posicao in
-                textoSemMascara = String.subistiuiCaractere(texto: textoSemMascara, posicao, caractereDeOcultacao)
+                textoSemMascara = String.subistituiCaractere(texto: textoSemMascara, posicao, caractereDeOcultacao)
             }
         }
-        let textoComMascara = textoSemMascara.aplicaMascara(mascara: mascara.rawValue)
+        let textoComMascara = textoSemMascara.aplicaMascara(mascara: mascara.valor(self.count))
         return textoComMascara
     }
     
-    static func subistiuiCaractere(texto: String, _ posicao: Int, _ novoCaractere: Character) -> String {
+    static func subistituiCaractere(texto: String, _ posicao: Int, _ novoCaractere: Character) -> String {
         var caracteres = Array(texto)
         guard let _ = caracteres[safe: posicao] else { return String(caracteres) }
         caracteres[posicao] = novoCaractere

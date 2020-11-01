@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldTelefone: UITextField!
     @IBOutlet weak var textFieldBoleto: UITextField!
 
+    @IBOutlet weak var labelTelefone: UILabel!
     @IBOutlet weak var labelCPF: UILabel!
     @IBOutlet weak var labelRG: UILabel!
     @IBOutlet weak var labelLinhaDigitavelBoleto: UILabel!
@@ -26,15 +27,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configuraComponentesDaTela()
         configuraFormatadoresParaTextField()
         aplicaMascaraNasLabels()
     }
     
+    func configuraComponentesDaTela() {
+        labelBoletoConvenio.minimumScaleFactor = 0.5
+        labelBoletoConvenio.adjustsFontSizeToFitWidth = true
+        
+        labelLinhaDigitavelBoleto.minimumScaleFactor = 0.5
+        labelLinhaDigitavelBoleto.adjustsFontSizeToFitWidth = true
+    }
+    
     func aplicaMascaraNasLabels() {
+        labelTelefone.text = "99999999999".aplicaMascara(.telefone)
         labelRG.text = "1111111".aplicaMascara(.mascaraRG)
-        labelCPF.text = "11111111111".aplicaMascara(.mascaraCPF, esconderPosicoes: [0, 1, 2, 9, 10], caractereDeOcultacao: "*")
-        labelBoletoConvenio.text = "4123412341241241234123412341".aplicaMascara(.mascaraLinhaDigitavelConvenio)
-        labelLinhaDigitavelBoleto.text = "888888888888888888888888888888888888888888888888".aplicaMascara(.mascaraLinhaDigitavelBoleto)
+        labelCPF.text = "11111111111".aplicaMascara(.mascaraCPF, esconderPosicoes: [9, 10], caractereDeOcultacao: "*")
+        labelBoletoConvenio.text = "84670000001435900240200240500024384221010811".aplicaMascara(.mascaraLinhaDigitavelConvenio)
+        labelLinhaDigitavelBoleto.text = "34191790010104351004791020150008484260026000".aplicaMascara(.mascaraLinhaDigitavelBoleto)
     }
     
     func configuraFormatadoresParaTextField() {

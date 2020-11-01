@@ -15,6 +15,17 @@ public enum CNMascara: String {
     case mascaraRG   = "#.###.###"
     case mascaraLinhaDigitavelConvenio = "###########-# ###########-# ###########-# ###########-#"
     case mascaraLinhaDigitavelBoleto =  "#####.##### #####.###### #####.###### # ##############"
+    case telefone = "+## (##) #####-####"
+    
+    public func valor(_ quantidadeDeDigitos: Int) -> String {
+        switch self {
+        case .telefone:
+            let geradorMascaraTelefone = CNGeradorMascaraTelefone(tipoMascara: .telefone)
+            return geradorMascaraTelefone.capturaMascaraTelefoneBaseadoQuantidadeNumeros(quantidadeDeDigitos)
+        default:
+            return self.rawValue
+        }
+    }
 }
 
 class CNGeradorMascaraGenerico: GeradorMascaraNumerico {
