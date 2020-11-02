@@ -122,10 +122,10 @@ class ViewController: UIViewController {
   /* 2. Caso a posição informada exceda o tamanho da String a posição em questão é ignorada */
 
   func aplicaMascaraNasLabels() {
-        /* Retorno: **) 99999-9999") */
+        /* Retorno: (**) 99999-9999") */
         labelTelefone.text = "99999999999".aplicaMascara(.telefone, esconderPosicoes: [0, 1], caractereDeOcultacao: "*")
 
-        /* Retorno: **) 111.111.111-** */
+        /* Retorno: 111.111.111-** */
         labelCPF.text = "11111111111".aplicaMascara(.mascaraCPF, esconderPosicoes: [9, 10], caractereDeOcultacao: "*")
    }
 ```
