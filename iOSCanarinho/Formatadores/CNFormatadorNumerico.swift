@@ -14,7 +14,7 @@ public protocol CNFormatador {
 }
 
 public enum TipoMascara {
-    case boleto, telefone, cpf, rg, cnpj, cep, customizada, percentual
+    case boleto, telefone, cpf, rg, cnpj, cep, customizada, percentual, cartaoDeCredito
 }
 
 protocol GeradorMascaraNumerico {
@@ -102,7 +102,7 @@ public class CNFormatadorNumerico: NSObject, UITextFieldDelegate, CNFormatador {
         switch tipoMascara {
         case .boleto:
             return CNGeradorMascaraBoleto(tipoMascara: tipoMascara, mascaraCustomizada: mascaraCustomizada)
-        case .cnpj, .cpf, .rg, .cep, .customizada:
+        case .cnpj, .cpf, .rg, .cep, .customizada, .cartaoDeCredito:
             return CNGeradorMascaraGenerico(tipoMascara: tipoMascara, mascaraCustomizada: mascaraCustomizada)
         case .telefone:
             return CNGeradorMascaraTelefone(tipoMascara: tipoMascara, mascaraCustomizada: mascaraCustomizada)

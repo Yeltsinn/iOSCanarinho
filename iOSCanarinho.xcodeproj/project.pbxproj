@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		702067EC25ADF4EB00749208 /* iOSCanarinhoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702067EB25ADF4EB00749208 /* iOSCanarinhoTests.swift */; };
+		702067EE25ADF4EB00749208 /* iOSCanarinho.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EE4475251A2E7D00B4588A /* iOSCanarinho.framework */; };
+		702067F825ADFA3D00749208 /* TestesAplicacaoDeMascaraEmStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702067F725ADFA3D00749208 /* TestesAplicacaoDeMascaraEmStrings.swift */; };
+		7020680025AF4A4500749208 /* TestesAplicacaoDeMascaraEmUITextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702067FF25AF4A4500749208 /* TestesAplicacaoDeMascaraEmUITextFields.swift */; };
 		70D4B7FB254DD274000D92F7 /* CNCollection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4B7FA254DD274000D92F7 /* CNCollection+Extensions.swift */; };
 		70EE447A251A2E7D00B4588A /* iOSCanarinho.h in Headers */ = {isa = PBXBuildFile; fileRef = 70EE4478251A2E7D00B4588A /* iOSCanarinho.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70EE448E251A2E9C00B4588A /* CNGeradorMascaraGenerico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE4481251A2E9C00B4588A /* CNGeradorMascaraGenerico.swift */; };
@@ -29,7 +33,22 @@
 		70EE44AD251A2F7A00B4588A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EE44AB251A2F7A00B4588A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		702067EF25ADF4EB00749208 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70EE446C251A2E7D00B4588A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70EE4474251A2E7D00B4588A;
+			remoteInfo = iOSCanarinho;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		702067E925ADF4EB00749208 /* iOSCanarinhoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCanarinhoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		702067EB25ADF4EB00749208 /* iOSCanarinhoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCanarinhoTests.swift; sourceTree = "<group>"; };
+		702067ED25ADF4EB00749208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		702067F725ADFA3D00749208 /* TestesAplicacaoDeMascaraEmStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestesAplicacaoDeMascaraEmStrings.swift; sourceTree = "<group>"; };
+		702067FF25AF4A4500749208 /* TestesAplicacaoDeMascaraEmUITextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestesAplicacaoDeMascaraEmUITextFields.swift; sourceTree = "<group>"; };
 		70D4B7FA254DD274000D92F7 /* CNCollection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CNCollection+Extensions.swift"; sourceTree = "<group>"; };
 		70EE4475251A2E7D00B4588A /* iOSCanarinho.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSCanarinho.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EE4478251A2E7D00B4588A /* iOSCanarinho.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSCanarinho.h; sourceTree = "<group>"; };
@@ -57,6 +76,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		702067E625ADF4EB00749208 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				702067EE25ADF4EB00749208 /* iOSCanarinho.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70EE4472251A2E7D00B4588A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -104,11 +131,23 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		702067EA25ADF4EB00749208 /* iOSCanarinhoTests */ = {
+			isa = PBXGroup;
+			children = (
+				702067FF25AF4A4500749208 /* TestesAplicacaoDeMascaraEmUITextFields.swift */,
+				702067F725ADFA3D00749208 /* TestesAplicacaoDeMascaraEmStrings.swift */,
+				702067EB25ADF4EB00749208 /* iOSCanarinhoTests.swift */,
+				702067ED25ADF4EB00749208 /* Info.plist */,
+			);
+			path = iOSCanarinhoTests;
+			sourceTree = "<group>";
+		};
 		70EE446B251A2E7D00B4588A = {
 			isa = PBXGroup;
 			children = (
 				70EE4477251A2E7D00B4588A /* iOSCanarinho */,
 				70EE449F251A2F7800B4588A /* iOSCanarinhoExemploDeUso */,
+				702067EA25ADF4EB00749208 /* iOSCanarinhoTests */,
 				70EE4476251A2E7D00B4588A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +157,7 @@
 			children = (
 				70EE4475251A2E7D00B4588A /* iOSCanarinho.framework */,
 				70EE449E251A2F7800B4588A /* iOSCanarinhoExemploDeUso.app */,
+				702067E925ADF4EB00749208 /* iOSCanarinhoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +214,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		702067E825ADF4EB00749208 /* iOSCanarinhoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 702067F325ADF4EB00749208 /* Build configuration list for PBXNativeTarget "iOSCanarinhoTests" */;
+			buildPhases = (
+				702067E525ADF4EB00749208 /* Sources */,
+				702067E625ADF4EB00749208 /* Frameworks */,
+				702067E725ADF4EB00749208 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				702067F025ADF4EB00749208 /* PBXTargetDependency */,
+			);
+			name = iOSCanarinhoTests;
+			productName = iOSCanarinhoTests;
+			productReference = 702067E925ADF4EB00749208 /* iOSCanarinhoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		70EE4474251A2E7D00B4588A /* iOSCanarinho */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70EE447D251A2E7D00B4588A /* Build configuration list for PBXNativeTarget "iOSCanarinho" */;
@@ -215,10 +273,13 @@
 		70EE446C251A2E7D00B4588A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Yeltsin Suares Lobato Gama";
 				TargetAttributes = {
+					702067E825ADF4EB00749208 = {
+						CreatedOnToolsVersion = 12.1;
+					};
 					70EE4474251A2E7D00B4588A = {
 						CreatedOnToolsVersion = 11.2;
 					};
@@ -242,11 +303,19 @@
 			targets = (
 				70EE4474251A2E7D00B4588A /* iOSCanarinho */,
 				70EE449D251A2F7800B4588A /* iOSCanarinhoExemploDeUso */,
+				702067E825ADF4EB00749208 /* iOSCanarinhoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		702067E725ADF4EB00749208 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70EE4473251A2E7D00B4588A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +336,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		702067E525ADF4EB00749208 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				702067F825ADFA3D00749208 /* TestesAplicacaoDeMascaraEmStrings.swift in Sources */,
+				702067EC25ADF4EB00749208 /* iOSCanarinhoTests.swift in Sources */,
+				7020680025AF4A4500749208 /* TestesAplicacaoDeMascaraEmUITextFields.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70EE4471251A2E7D00B4588A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,6 +378,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		702067F025ADF4EB00749208 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70EE4474251A2E7D00B4588A /* iOSCanarinho */;
+			targetProxy = 702067EF25ADF4EB00749208 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		70EE44A6251A2F7800B4588A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -319,6 +406,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		702067F125ADF4EB00749208 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WD9PFDY3H6;
+				INFOPLIST_FILE = iOSCanarinhoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YSLG.iOSCanarinhoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		702067F225ADF4EB00749208 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WD9PFDY3H6;
+				INFOPLIST_FILE = iOSCanarinhoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YSLG.iOSCanarinhoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		70EE447B251A2E7D00B4588A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -528,6 +655,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		702067F325ADF4EB00749208 /* Build configuration list for PBXNativeTarget "iOSCanarinhoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				702067F125ADF4EB00749208 /* Debug */,
+				702067F225ADF4EB00749208 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		70EE446F251A2E7D00B4588A /* Build configuration list for PBXProject "iOSCanarinho" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

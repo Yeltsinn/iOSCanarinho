@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,52 +21,58 @@
                                 <rect key="frame" x="31" y="162" width="352" height="582"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85O-gr-Onb">
-                                        <rect key="frame" x="157.5" y="0.0" width="37.5" height="54.5"/>
+                                        <rect key="frame" x="157.5" y="0.0" width="37.5" height="49"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCk-ui-LiK">
-                                        <rect key="frame" x="157.5" y="58.5" width="37.5" height="54.5"/>
+                                        <rect key="frame" x="157.5" y="53" width="37.5" height="49.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOL-bW-Nse">
-                                        <rect key="frame" x="157.5" y="117" width="37.5" height="54.5"/>
+                                        <rect key="frame" x="157.5" y="106.5" width="37.5" height="49"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lap-2F-fKh">
-                                        <rect key="frame" x="157.5" y="175.5" width="37.5" height="55"/>
+                                        <rect key="frame" x="157.5" y="159.5" width="37.5" height="49.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdz-NZ-nqK">
-                                        <rect key="frame" x="157.5" y="234.5" width="37.5" height="54.5"/>
+                                        <rect key="frame" x="157.5" y="213" width="37.5" height="49.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWJ-0L-mWB">
+                                        <rect key="frame" x="157.5" y="266.5" width="37.5" height="49"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pGY-e0-6Fc">
-                                        <rect key="frame" x="0.0" y="293" width="352" height="54.5"/>
+                                        <rect key="frame" x="0.0" y="319.5" width="352" height="49.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPV-YI-bTV">
-                                        <rect key="frame" x="0.0" y="351.5" width="352" height="55"/>
+                                        <rect key="frame" x="0.0" y="373" width="352" height="49.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gFC-7p-0zU">
-                                        <rect key="frame" x="0.0" y="410.5" width="352" height="54.5"/>
+                                        <rect key="frame" x="0.0" y="426.5" width="352" height="49"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-3P-xBb" userLabel="MostrarInputsSemMascara">
-                                        <rect key="frame" x="0.0" y="469" width="352" height="54.5"/>
+                                        <rect key="frame" x="0.0" y="479.5" width="352" height="49.5"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.24769724151234568" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="MOSTRAR INPUTS SEM MASCARA"/>
@@ -75,10 +81,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfe-Jv-AFr" userLabel="MostrarInputsComMascara">
-                                        <rect key="frame" x="0.0" y="527.5" width="352" height="54.5"/>
+                                        <rect key="frame" x="0.0" y="533" width="352" height="49"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="MOSTRAR INPUTS SEM MASCARA"/>
+                                        <state key="normal" title="MOSTRAR INPUTS COM MASCARA"/>
                                         <connections>
                                             <action selector="mostrarInputsComMascara:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JMI-Xr-A06"/>
                                         </connections>
@@ -105,6 +111,7 @@
                     <connections>
                         <outlet property="labelBoletoConvenio" destination="Vdz-NZ-nqK" id="0lN-Lh-GWR"/>
                         <outlet property="labelCPF" destination="VCk-ui-LiK" id="UGt-yu-9o6"/>
+                        <outlet property="labelCartaoDeCredito" destination="SWJ-0L-mWB" id="OhQ-XN-T8c"/>
                         <outlet property="labelLinhaDigitavelBoleto" destination="Lap-2F-fKh" id="Ai0-uj-vaJ"/>
                         <outlet property="labelRG" destination="rOL-bW-Nse" id="Zz8-pQ-Vqv"/>
                         <outlet property="labelTelefone" destination="85O-gr-Onb" id="Ho4-K2-NGf"/>

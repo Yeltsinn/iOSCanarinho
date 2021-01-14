@@ -16,6 +16,7 @@ public enum CNMascara: String {
     case mascaraLinhaDigitavelConvenio = "###########-# ###########-# ###########-# ###########-#"
     case mascaraLinhaDigitavelBoleto =  "#####.##### #####.###### #####.###### # ##############"
     case telefone = "+## (##) #####-####"
+    case cartaoDeCredito = "#### #### #### ####"
     
     public func valor(_ quantidadeDeDigitos: Int) -> String {
         switch self {
@@ -48,6 +49,8 @@ class CNGeradorMascaraGenerico: GeradorMascaraNumerico {
             return CNMascara.mascaraCPF.rawValue
         case .cep:
             return CNMascara.mascaraCEP.rawValue
+        case .cartaoDeCredito:
+            return CNMascara.cartaoDeCredito.rawValue
         case .customizada:
             return mascaraCustomizada ?? ""
         default:

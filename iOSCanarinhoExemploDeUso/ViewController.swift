@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelRG: UILabel!
     @IBOutlet weak var labelLinhaDigitavelBoleto: UILabel!
     @IBOutlet weak var labelBoletoConvenio: UILabel!
+    @IBOutlet weak var labelCartaoDeCredito: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,7 @@ class ViewController: UIViewController {
         labelCPF.text = "11111111111".aplicaMascara(.mascaraCPF, esconderPosicoes: [9, 10], caractereDeOcultacao: "*")
         labelBoletoConvenio.text = "84670000001435900240200240500024384221010811".aplicaMascara(.mascaraLinhaDigitavelConvenio)
         labelLinhaDigitavelBoleto.text = "34191790010104351004791020150008484260026000".aplicaMascara(.mascaraLinhaDigitavelBoleto)
+        labelCartaoDeCredito.text = "1111111111111111".aplicaMascara(.cartaoDeCredito)
     }
     
     func configuraFormatadoresParaTextField() {
