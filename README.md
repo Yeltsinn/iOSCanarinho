@@ -19,6 +19,7 @@ Além de dar suporte para o trabalho com máscaras, formatadores e validadores p
 * Telefone
 * Telefone com máscara de segurança
 * CEP
+* Cartão de Crédito
 
 ## Validadores
 
