@@ -11,6 +11,7 @@
 		702067EE25ADF4EB00749208 /* iOSCanarinho.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EE4475251A2E7D00B4588A /* iOSCanarinho.framework */; };
 		702067F825ADFA3D00749208 /* TestesAplicacaoDeMascaraEmStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702067F725ADFA3D00749208 /* TestesAplicacaoDeMascaraEmStrings.swift */; };
 		7020680025AF4A4500749208 /* TestesAplicacaoDeMascaraEmUITextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702067FF25AF4A4500749208 /* TestesAplicacaoDeMascaraEmUITextFields.swift */; };
+		7020680B25B1D3CB00749208 /* TestesGeradoresDeMascaras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7020680A25B1D3CA00749208 /* TestesGeradoresDeMascaras.swift */; };
 		70D4B7FB254DD274000D92F7 /* CNCollection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4B7FA254DD274000D92F7 /* CNCollection+Extensions.swift */; };
 		70EE447A251A2E7D00B4588A /* iOSCanarinho.h in Headers */ = {isa = PBXBuildFile; fileRef = 70EE4478251A2E7D00B4588A /* iOSCanarinho.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70EE448E251A2E9C00B4588A /* CNGeradorMascaraGenerico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EE4481251A2E9C00B4588A /* CNGeradorMascaraGenerico.swift */; };
@@ -49,6 +50,7 @@
 		702067ED25ADF4EB00749208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		702067F725ADFA3D00749208 /* TestesAplicacaoDeMascaraEmStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestesAplicacaoDeMascaraEmStrings.swift; sourceTree = "<group>"; };
 		702067FF25AF4A4500749208 /* TestesAplicacaoDeMascaraEmUITextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestesAplicacaoDeMascaraEmUITextFields.swift; sourceTree = "<group>"; };
+		7020680A25B1D3CA00749208 /* TestesGeradoresDeMascaras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestesGeradoresDeMascaras.swift; sourceTree = "<group>"; };
 		70D4B7FA254DD274000D92F7 /* CNCollection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CNCollection+Extensions.swift"; sourceTree = "<group>"; };
 		70EE4475251A2E7D00B4588A /* iOSCanarinho.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSCanarinho.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EE4478251A2E7D00B4588A /* iOSCanarinho.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSCanarinho.h; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				702067FF25AF4A4500749208 /* TestesAplicacaoDeMascaraEmUITextFields.swift */,
 				702067F725ADFA3D00749208 /* TestesAplicacaoDeMascaraEmStrings.swift */,
+				7020680A25B1D3CA00749208 /* TestesGeradoresDeMascaras.swift */,
 				702067EB25ADF4EB00749208 /* iOSCanarinhoTests.swift */,
 				702067ED25ADF4EB00749208 /* Info.plist */,
 			);
@@ -342,6 +345,7 @@
 			files = (
 				702067F825ADFA3D00749208 /* TestesAplicacaoDeMascaraEmStrings.swift in Sources */,
 				702067EC25ADF4EB00749208 /* iOSCanarinhoTests.swift in Sources */,
+				7020680B25B1D3CB00749208 /* TestesGeradoresDeMascaras.swift in Sources */,
 				7020680025AF4A4500749208 /* TestesAplicacaoDeMascaraEmUITextFields.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

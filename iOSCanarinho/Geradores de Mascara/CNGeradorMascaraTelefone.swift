@@ -8,14 +8,14 @@
 
 import Foundation
 
-let mascaraTelefone1 = "###-####"
-let mascaraTelefone2 = "####-####"
-let mascaraTelefone3 = "#####-####"
-let mascaraTelefone4 = "(##) ####-####"
-let mascaraTelefone5 = "(##) #####-####"
-let mascaraTelefone6 = "+## (##) #####-####"
-
 class CNGeradorMascaraTelefone: GeradorMascaraNumerico {
+    
+    static let mascaraTelefone1 = "###-####"
+    static let mascaraTelefone2 = "####-####"
+    static let mascaraTelefone3 = "#####-####"
+    static let mascaraTelefone4 = "(##) ####-####"
+    static let mascaraTelefone5 = "(##) #####-####"
+    static let mascaraTelefone6 = "+## (##) #####-####"
     
     var tipoMascara: TipoMascara
     
@@ -31,12 +31,12 @@ class CNGeradorMascaraTelefone: GeradorMascaraNumerico {
     
     func capturaMascaraTelefoneBaseadoQuantidadeNumeros(_ count: Int) -> String {
         switch count {
-        case 0..<8 : return mascaraTelefone1
-        case 8     : return mascaraTelefone2
-        case 9     : return mascaraTelefone3
-        case 10    : return mascaraTelefone4
-        case 11    : return mascaraTelefone5
-        default    : return mascaraTelefone6
+        case 0..<8 : return CNGeradorMascaraTelefone.mascaraTelefone1
+        case 8     : return CNGeradorMascaraTelefone.mascaraTelefone2
+        case 9     : return CNGeradorMascaraTelefone.mascaraTelefone3
+        case 10    : return CNGeradorMascaraTelefone.mascaraTelefone4
+        case 11    : return CNGeradorMascaraTelefone.mascaraTelefone5
+        default    : return CNGeradorMascaraTelefone.mascaraTelefone6
         }
     }
     
